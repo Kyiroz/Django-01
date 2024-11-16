@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Mango home
-    </h1>
+<!-- Necesito que heredes del _base -->
+{% extends "_base.html" %} <!-- El espacio se refiere a la carpeta donde se encuentra el archivo _base.html -->
 
-    <button>
-        <a href="http://127.0.0.1:8000/about"> Pal about</a>
-    </button>
-</body>
-</html>
+{% block content %}
+    <h1>Home page</h1>
+{% endblock content %}
